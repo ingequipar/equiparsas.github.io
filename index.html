@@ -3,51 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EQUIPAR SAS - Seguridad Industrial</title>
+
+  <title>EQUIPAR SAS – Redireccionando…</title>
+
+  <!-- Redirección automática en 5 segundos -->
+  <meta http-equiv="refresh" content="5;url=https://ingequipar.wixsite.com/equipar">
+
+  <!-- Redirección alternativa por JavaScript -->
+  <script>
+    setTimeout(function () {
+      window.location.href = "https://ingequipar.wixsite.com/equipar";
+    }, 5000);
+  </script>
+
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #f4f6f9;
       color: #333;
-    }
-    header {
-      background: url('banner-industrial.jpg') center/cover no-repeat;
-      color: #fff;
-      padding: 80px 20px;
-      text-align: center;
-      position: relative;
-    }
-    header::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 64, 128, 0.7);
-    }
-    header .content {
-      position: relative;
-      z-index: 1;
-    }
-    header img {
-      max-width: 120px;
-      margin-bottom: 15px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    main {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 40vh;
+      min-height: 100vh;
       text-align: center;
     }
+
+    .container {
+      padding: 20px;
+    }
+
+    .logo {
+      max-width: 220px;
+      margin-bottom: 20px;
+    }
+
     .loader {
       border: 6px solid #ddd;
       border-top: 6px solid #ffcc00;
@@ -57,44 +47,36 @@
       animation: spin 1s linear infinite;
       margin: 20px auto;
     }
+
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
-    footer {
-      background: #004080;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
+
     a {
-      color: #0073e6;
-      text-decoration: none;
+      color: #004080;
       font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
-  <!-- Redirección automática en 5 segundos -->
-  <meta http-equiv="refresh" content="5;url=https://ingequipar.wixsite.com/equipar">
 </head>
+
 <body>
-  <header>
-    <div class="content">
-      <img src="LOGO DORADO.png" alt="Logo EQUIPAR SAS">
-      <h1>EQUIPAR SAS</h1>
-      <p>Seguridad Industrial y Protección Personal</p>
-    </div>
-  </header>
-  <main>
-    <h2>Bienvenido a nuestro sitio oficial</h2>
-    <p>En unos segundos serás redirigido a nuestra página principal.</p>
+  <div class="container">
+    <img src="LOGO DORADO.png" alt="Logo EQUIPAR SAS" class="logo">
+
+    <h2>Disculpe las molestias</h2>
+    <p>Pronto será redirigido a la página oficial de <strong>EQUIPAR SAS</strong>.</p>
+
     <div class="loader"></div>
-    <p>Si la redirección no ocurre automáticamente, haz clic 
+
+    <p>Si la redirección no ocurre automáticamente, haga clic 
       <a href="https://ingequipar.wixsite.com/equipar">aquí</a>.
     </p>
-  </main>
-  <footer>
-    © 2026 EQUIPAR SAS · Todos los derechos reservados
-  </footer>
+  </div>
 </body>
 </html>
